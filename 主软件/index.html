@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="description" content="DiliLife 帝力生活，帝力本地即时零售与生活服务平台，支持送货到家和货到付款。" />
+    <meta property="og:title" content="DiliLife 帝力生活" />
+    <meta property="og:description" content="帝力本地即时零售与生活服务平台，支持送货到家和货到付款。" />
+    <meta property="og:image" content="../assets/dililife-logo-official-1024.png" />
+    <meta property="og:type" content="website" />
+    <title>DiliLife 帝力生活｜帝力生活，一站到家</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../01-品牌与文案/logo正式导出包/favicon-32.png" />
+    <link rel="apple-touch-icon" href="../assets/dililife-pwa-icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="../06-同城服务扩展/软件原型/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main-app">
+      <aside class="sidebar">
+        <div class="brand">
+          <img src="../assets/dililife-logo-white-1024.png" alt="DiliLife 帝力生活" />
+          <div>
+            <strong>DiliLife</strong>
+            <span>帝力生活，一站到家</span>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="主软件导航">
+          <button class="nav-item active" data-route="home" type="button">首页工作台</button>
+          <button class="nav-item" data-route="client" type="button">客户端</button>
+          <button class="nav-item" data-route="admin" type="button">运营后台</button>
+          <button class="nav-item" data-route="supportDesk" type="button">客服端</button>
+          <button class="nav-item" data-route="store" type="button">门店端</button>
+          <button class="nav-item" data-route="rider" type="button">配送员端</button>
+          <button class="nav-item" data-route="service" type="button">维修安装</button>
+          <button class="nav-item" data-route="finance" type="button">财务数据</button>
+          <button class="nav-item" data-route="city" type="button">同城服务</button>
+          <button class="nav-item" data-route="support" type="button">同城审核</button>
+          <button class="nav-item" data-route="ops" type="button">同城复盘</button>
+        </nav>
+        <div class="sidebar-note">
+          第一阶段：本地购物、客服确认、门店备货、配送到家、货到付款优先跑通。
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">DiliLife / 帝力生活</p>
+            <h1 id="pageTitle">首页工作台</h1>
+          </div>
+          <a class="whatsapp" href="https://wa.me/?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%20DiliLife%20%E5%B8%9D%E5%8A%9B%E7%94%9F%E6%B4%BB%E7%9A%84%E5%95%86%E5%93%81%E5%92%8C%E9%85%8D%E9%80%81%E3%80%82" target="_blank" rel="noreferrer">WhatsApp 咨询</a>
+        </header>
+
+        <section class="route active" id="homeRoute">
+          <div class="hero">
+            <div>
+              <p class="eyebrow">帝力生活，一站到家</p>
+              <h2>Dili 本地购物与生活服务入口</h2>
+              <p>DiliLife 帝力生活支持本地购物、送货到家、维修安装和同城信息。下单后客服先确认商品、地址和配送费，再安排门店备货与配送。</p>
+              <div class="trust-tags" aria-label="服务保障">
+                <span>本地门店</span>
+                <span>客服确认</span>
+                <span>货到付款</span>
+                <span>维修安装</span>
+                <span>WhatsApp 咨询</span>
+              </div>
+            </div>
+            <button class="primary" data-route-jump="client" type="button">立即下单</button>
+          </div>
+
+          <div class="module-grid">
+            <article class="module-card strong">
+              <span>主闭环</span>
+              <h3>客户端</h3>
+              <p>服装鞋包、厨房用品、大家电、生活用品等商品浏览、购物车、结算和货到付款。</p>
+              <button data-route-jump="client" type="button">进入客户端</button>
+            </article>
+            <article class="module-card">
+              <span>总控</span>
+              <h3>运营后台</h3>
+              <p>管商品、订单、门店、配送、权限和试运营数据。</p>
+              <button data-route-jump="admin" type="button">进入后台</button>
+            </article>
+            <article class="module-card">
+              <span>确认</span>
+              <h3>客服端</h3>
+              <p>确认订单、联系客户、处理缺货、更新配送承诺。</p>
+              <button data-route-jump="supportDesk" type="button">进入客服端</button>
+            </article>
+            <article class="module-card">
+              <span>履约</span>
+              <h3>门店端</h3>
+              <p>接收备货任务、反馈缺货、打包复核、交给配送员。</p>
+              <button data-route-jump="store" type="button">进入门店端</button>
+            </article>
+            <article class="module-card">
+              <span>配送</span>
+              <h3>配送员端</h3>
+              <p>取货、配送中、送达收款、异常上报、COD 回款。</p>
+              <button data-route-jump="rider" type="button">进入配送员端</button>
+            </article>
+            <article class="module-card">
+              <span>财务</span>
+              <h3>财务数据</h3>
+              <p>订单 GMV、COD 对账、日报关闭、异常升级、100/300/1000 单复盘。</p>
+              <button data-route-jump="finance" type="button">进入财务端</button>
+            </article>
+          </div>
+
+          <div class="flow-panel">
+            <div>
+              <p class="eyebrow">第一阶段闭环</p>
+              <h3>用户下单 -> 客服确认 -> 门店备货 -> 配送到家 -> 货到付款</h3>
+            </div>
+            <p>当前主软件仍是静态原型，已接入品牌与主流程表达；真实库存、订单、客服号码和二维码需要后续接入业务数据。</p>
+          </div>
+
+          <div class="handoff-flow" aria-label="端口衔接">
+            <button data-route-jump="client" type="button"><b>01 客户端</b><span>提交订单</span></button>
+            <button data-route-jump="supportDesk" type="button"><b>02 客服端</b><span>确认订单</span></button>
+            <button data-route-jump="store" type="button"><b>03 门店端</b><span>备货交接</span></button>
+            <button data-route-jump="rider" type="button"><b>04 配送员端</b><span>送达收款</span></button>
+            <button data-route-jump="finance" type="button"><b>05 财务端</b><span>COD 对账</span></button>
+            <button data-route-jump="admin" type="button"><b>06 运营后台</b><span>复盘优化</span></button>
+          </div>
+        </section>
+
+        <section class="route" id="shopRoute">
+          <div class="client-shell">
+            <section class="client-hero">
+              <div>
+                <p class="eyebrow">客户端 H5/PWA</p>
+                <h2>帝力本地购物，一站到家</h2>
+                <p>选择服装、裤子、高压锅、冰箱、日用品等商品，填写地址并提交货到付款订单。客服会通过 WhatsApp 确认库存、配送费和送达时间，再安排门店备货与配送。</p>
+                <div class="client-search">
+                  <input id="clientSearch" type="search" placeholder="搜索衣服、裤子、高压锅、冰箱、SKU" />
+                  <a href="https://wa.me/?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%20DiliLife%20%E5%B8%9D%E5%8A%9B%E7%94%9F%E6%B4%BB%E7%9A%84%E5%95%86%E5%93%81%E5%92%8C%E9%85%8D%E9%80%81%E3%80%82" target="_blank" rel="noreferrer">WhatsApp 咨询</a>
+                </div>
+              </div>
+              <aside class="client-delivery-card">
+                <span>今日配送</span>
+                <strong>Dili 试运营区域</strong>
+                <p>Comoro / Becora / Timor Plaza 周边优先配送</p>
+                <b>支持货到付款</b>
+              </aside>
+            </section>
+
+            <section class="client-service-strip" aria-label="客户端核心服务">
+              <div><b>本地门店</b><span>门店备货，客服确认</span></div>
+              <div><b>货到付款</b><span>送达后现金支付</span></div>
+              <div><b>维修安装</b><span>大件商品可预约</span></div>
+              <div><b>售后记录</b><span>问题可追踪处理</span></div>
+            </section>
+
+            <section class="client-main-grid">
+              <div class="client-catalog">
+                <div class="section-heading compact">
+                  <div>
+                    <p class="eyebrow">商品分类</p>
+                    <h3>选择试单商品</h3>
+                  </div>
+                  <span id="clientProductCount">0 件</span>
+                </div>
+                <div class="client-category-chips" id="clientCategoryChips"></div>
+                <div class="live-product-list client-products" id="clientProductList"></div>
+              </div>
+
+              <aside class="client-checkout">
+                <div class="checkout-card">
+                  <div class="panel-head">
+                    <div>
+                      <p class="eyebrow">购物车</p>
+                      <h3>货到付款订单</h3>
+                    </div>
+                    <span class="status-chip">客服确认</span>
+                  </div>
+                  <div class="client-cart-items" id="clientCartItems"></div>
+                  <div class="cart-summary" id="clientCartSummary"></div>
+                </div>
+
+                <form id="clientOrderForm" class="live-form client-checkout-form">
+                  <h3>收货信息</h3>
+                  <label>姓名 <input name="customer" required value="Maria Test" /></label>
+                  <label>电话 <input name="phone" required value="+670 7xxx 100" /></label>
+                  <label>WhatsApp <input name="whatsapp" required value="+670 7xxx 100" /></label>
+                  <label>区域 <input name="area" required value="Comoro" /></label>
+                  <label class="wide">详细地址 <input name="address" required value="Comoro 主路附近，黄色门店旁" /></label>
+                  <label class="wide">备注 <input name="note" value="下午送达，客服先 WhatsApp 确认" /></label>
+                  <button class="primary" type="submit">提交货到付款订单</button>
+                </form>
+              </aside>
+            </section>
+
+            <section class="client-order-status">
+              <div class="panel-head">
+                <div>
+                  <p class="eyebrow">我的订单</p>
+                  <h3>最近测试订单</h3>
+                </div>
+                <span class="status-chip">状态会同步到各端口</span>
+              </div>
+              <div class="client-order-steps">
+                <span>提交订单</span>
+                <span>客服确认</span>
+                <span>门店备货</span>
+                <span>配送收款</span>
+                <span>财务完成</span>
+              </div>
+              <div class="live-order-list" id="clientLiveOrders"></div>
+            </section>
+          </div>
+
+          <div class="live-panel client-notice-panel">
+            <div>
+              <p class="eyebrow">下单说明</p>
+              <h3>商品图片、库存、配送费和送达时间以下单后客服确认为准</h3>
+            </div>
+            <p>当前已内置一批可测试商品，用于模拟真实商城下单。正式上线前需要把这些演示图替换为门店实拍图，并接入真实 SKU、库存、价格、门店和 WhatsApp 客服号码。</p>
+          </div>
+
+          <div class="port-handoff-panel">
+            <div>
+              <p class="eyebrow">交给下一端口</p>
+              <h3>客户端提交后，订单进入客服端待确认</h3>
+              <p>必须带上姓名、电话、WhatsApp、地址、区域、商品明细、预计配送费、COD 应收金额和备注。没有这些字段，后面门店和配送都会卡住。</p>
+            </div>
+            <button class="primary" data-route-jump="supportDesk" type="button">模拟交给客服端</button>
+          </div>
+        </section>
+
+        <section class="route port-route" id="adminRoute">
+          <div class="port-hero">
+            <div>
+              <p class="eyebrow">运营管理后台</p>
+              <h2>老板和运营的总控制台</h2>
+              <p>后台负责商品、订单、门店、配送、财务、权限和系统配置。第一阶段不做复杂 SaaS，但必须把订单闭环和现金风险看住。</p>
+            </div>
+            <span class="port-status">P0 必须</span>
+          </div>
+          <div class="port-grid">
+            <article class="port-card"><span>订单</span><h3>订单总览</h3><p>待确认、待备货、配送中、已送达待回款、异常未关闭。</p></article>
+            <article class="port-card"><span>商品</span><h3>SKU 与库存</h3><p>前 100 SKU、前 30 A 级商品、价格、库存、图片、替代商品。</p></article>
+            <article class="port-card"><span>履约</span><h3>门店与配送</h3><p>门店状态、配送员状态、今日区域、配送费、交接记录。</p></article>
+            <article class="port-card"><span>配置</span><h3>系统设置</h3><p>WhatsApp 号码、配送区域、品牌分享、角色权限、红线规则。</p></article>
+          </div>
+          <div class="handoff-checklist">
+            <h3>后台需要确认的衔接</h3>
+            <ul>
+              <li>客服确认后的订单能进入门店端。</li>
+              <li>门店缺货能回到客服端和商品库存。</li>
+              <li>配送送达后必须进入财务端，而不是直接完成。</li>
+              <li>所有状态变更必须有操作人和时间。</li>
+            </ul>
+          </div>
+          <div class="live-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">运营总控</p>
+                <h3>订单闭环总览</h3>
+              </div>
+              <div class="admin-tool-actions">
+                <button class="secondary" id="seedDemoOrders" type="button">生成测试订单</button>
+                <button class="secondary" id="exportDemoOrders" type="button">导出数据</button>
+                <label class="secondary import-button" for="importDemoOrders">导入数据</label>
+                <input id="importDemoOrders" type="file" accept="application/json,.json" />
+                <button class="secondary danger-light" id="resetDemoOrders" type="button">重置演示订单</button>
+              </div>
+            </div>
+            <div class="data-ops-panel">
+              <div>
+                <span>当前数据模式</span>
+                <b>浏览器本地测试数据</b>
+                <small>适合试流程；正式上线前需要接数据库。</small>
+              </div>
+              <div>
+                <span>备份建议</span>
+                <b>每天测试后导出一次</b>
+                <small>换手机、清缓存或换浏览器前先导出。</small>
+              </div>
+              <div>
+                <span>下一阶段</span>
+                <b>共享后台数据</b>
+                <small>客服、门店、配送、财务共用同一订单池。</small>
+              </div>
+            </div>
+            <div class="live-stats" id="adminLiveStats"></div>
+            <div class="live-order-list" id="adminLiveOrders"></div>
+          </div>
+        </section>
+
+        <section class="route port-route" id="supportDeskRoute">
+          <div class="port-hero">
+            <div>
+              <p class="eyebrow">客服端</p>
+              <h2>把新订单变成可履约订单</h2>
+              <p>客服端是全流程第一个关键闸口：确认商品、地址、配送费和 COD 金额，缺货时给替代方案，确认后才交给门店备货。</p>
+            </div>
+            <span class="port-status">P0 必须</span>
+          </div>
+          <div class="workflow-board">
+            <section>
+              <h3>待确认订单</h3>
+              <div class="work-item strong"><b>DL-20260703-001</b><span>Comoro / $42.50 / 3 件商品</span></div>
+              <div class="work-item"><b>DL-20260703-002</b><span>Becora / 需确认配送费</span></div>
+            </section>
+            <section>
+              <h3>客服动作</h3>
+              <ul>
+                <li>WhatsApp 联系客户。</li>
+                <li>确认库存、地址、区域和配送费。</li>
+                <li>记录客户备注和二次确认金额。</li>
+                <li>缺货时选择替代、等待或取消。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>交给门店端</h3>
+              <ul>
+                <li>订单状态：已确认待备货。</li>
+                <li>字段完整：SKU、规格、数量、包裹备注。</li>
+                <li>金额完整：商品金额、配送费、COD 应收。</li>
+              </ul>
+            </section>
+          </div>
+          <div class="live-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">客服实操</p>
+                <h3>待确认订单队列</h3>
+              </div>
+              <span class="status-chip">确认后进入门店端</span>
+            </div>
+            <div class="live-order-list" id="supportLiveOrders"></div>
+          </div>
+          <div class="port-handoff-panel">
+            <div>
+              <p class="eyebrow">下一端口</p>
+              <h3>客服确认后，门店端才能备货</h3>
+              <p>如果客服没有确认配送费和 COD 金额，门店不应打包，配送员也不应取货。</p>
+            </div>
+            <button class="primary" data-route-jump="store" type="button">模拟交给门店端</button>
+          </div>
+        </section>
+
+        <section class="route port-route" id="storeRoute">
+          <div class="port-hero">
+            <div>
+              <p class="eyebrow">门店端</p>
+              <h2>备货、缺货反馈和配送交接</h2>
+              <p>门店端负责把客服确认过的订单变成真实包裹。这里必须解决 SKU、数量、包裹数、应收金额四项复核。</p>
+            </div>
+            <span class="port-status">P0 必须</span>
+          </div>
+          <div class="workflow-board">
+            <section>
+              <h3>待备货</h3>
+              <div class="work-item strong"><b>DL-20260703-001</b><span>3 件 / 2 包 / 应收 $42.50</span></div>
+              <div class="work-item"><b>缺货风险</b><span>电水壶库存少量，需复核货位 A-03</span></div>
+            </section>
+            <section>
+              <h3>门店动作</h3>
+              <ul>
+                <li>开始备货。</li>
+                <li>反馈部分缺货或全部缺货。</li>
+                <li>完成 SKU、数量、包裹数、金额复核。</li>
+                <li>打包贴标签，等待配送员取货。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>交给配送员端</h3>
+              <ul>
+                <li>订单状态：已备货待取货。</li>
+                <li>交接字段：包裹数、外观、应收金额、取货时间。</li>
+                <li>配送员取货必须签收确认。</li>
+              </ul>
+            </section>
+          </div>
+          <div class="live-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">门店实操</p>
+                <h3>备货任务队列</h3>
+              </div>
+              <span class="status-chip">备好后交给配送员</span>
+            </div>
+            <div class="live-order-list" id="storeLiveOrders"></div>
+          </div>
+          <div class="port-handoff-panel">
+            <div>
+              <p class="eyebrow">下一端口</p>
+              <h3>门店完成复核后，配送员才能取货</h3>
+              <p>如果缺货未处理，订单不能交给配送；如果包裹数和应收金额未复核，COD 对账会出问题。</p>
+            </div>
+            <button class="primary" data-route-jump="rider" type="button">模拟交给配送员端</button>
+          </div>
+        </section>
+
+        <section class="route port-route" id="riderRoute">
+          <div class="port-hero">
+            <div>
+              <p class="eyebrow">配送员端</p>
+              <h2>取货、送达、收款和异常上报</h2>
+              <p>配送员端只做必要动作，越简单越好。第一阶段不做实时地图和抢单，重点是交接留痕、送达收款和 COD 回款。</p>
+            </div>
+            <span class="port-status">P0 必须</span>
+          </div>
+          <div class="workflow-board rider-board">
+            <section>
+              <h3>我的配送单</h3>
+              <div class="work-item strong"><b>DL-20260703-001</b><span>取货：Comoro Store / 送达：Becora / $42.50</span></div>
+              <div class="work-item"><b>今日 COD</b><span>应收 $136.00 / 已交回 $92.00 / 待交回 $44.00</span></div>
+            </section>
+            <section>
+              <h3>配送动作</h3>
+              <ul>
+                <li>确认取货：订单号、包裹数、外观、应收金额。</li>
+                <li>标记配送中。</li>
+                <li>送达后记录实收现金。</li>
+                <li>地址不清、联系不上、拒收、破损必须上报。</li>
+              </ul>
+            </section>
+            <section>
+              <h3>交给财务端</h3>
+              <ul>
+                <li>状态：已送达待回款。</li>
+                <li>字段：实收现金、差异原因、回款时间、凭证。</li>
+                <li>现金未交回前，订单不能算完成。</li>
+              </ul>
+            </section>
+          </div>
+          <div class="live-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">配送实操</p>
+                <h3>配送任务队列</h3>
+              </div>
+              <span class="status-chip">送达后进入财务端</span>
+            </div>
+            <div class="live-order-list" id="riderLiveOrders"></div>
+          </div>
+          <div class="port-handoff-panel">
+            <div>
+              <p class="eyebrow">下一端口</p>
+              <h3>配送员送达后，必须进入财务对账</h3>
+              <p>这里是现金风险最高的位置。系统必须把“已送达待回款”和“已完成”分开。</p>
+            </div>
+            <button class="primary" data-route-jump="finance" type="button">模拟交给财务端</button>
+          </div>
+        </section>
+
+        <section class="route service-route" id="serviceRoute">
+          <div class="service-hero">
+            <div>
+              <p class="eyebrow">05 售后维修安装</p>
+              <h2>买得放心，送装维修都有人管</h2>
+              <p>DiliLife 帝力生活把商品售后、安装预约、维修报价和师傅评价并入主平台。用户提交需求后，客服通过 WhatsApp 确认服务内容、上门时间和预计费用。</p>
+              <div class="trust-tags" aria-label="维修安装保障">
+                <span>费用先确认</span>
+                <span>客服派单</span>
+                <span>配件明细</span>
+                <span>质保记录</span>
+              </div>
+            </div>
+            <a class="primary" href="https://wa.me/?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E7%BA%A6%20DiliLife%20%E7%BB%B4%E4%BF%AE%E5%AE%89%E8%A3%85%E6%88%96%E5%94%AE%E5%90%8E%E6%9C%8D%E5%8A%A1%E3%80%82" target="_blank" rel="noreferrer">WhatsApp 预约</a>
+          </div>
+
+          <div class="service-grid service-real-grid" id="serviceRealGrid"></div>
+
+          <div class="service-workflow">
+            <div>
+              <p class="eyebrow">服务闭环</p>
+              <h3>用户预约 -> 客服确认 -> 报价确认 -> 派单师傅 -> 上门服务 -> 完工验收 -> 质保复查</h3>
+            </div>
+            <ol>
+              <li>用户上传商品、故障或安装位置照片。</li>
+              <li>客服确认地址、区域、时间和预计费用。</li>
+              <li>师傅到场后，追加配件或施工必须再次确认。</li>
+              <li>完工后记录照片、费用、质保日期和用户评价。</li>
+            </ol>
+          </div>
+
+          <div class="service-panel-grid">
+            <section class="service-panel">
+              <h3>用户端</h3>
+              <ul>
+                <li>预约安装、申请售后、联系客服。</li>
+                <li>上门费、人工费、配件费先确认。</li>
+                <li>质保以服务工单记录为准。</li>
+              </ul>
+            </section>
+            <section class="service-panel">
+              <h3>客服后台</h3>
+              <ul>
+                <li>从订单或 WhatsApp 创建售后工单。</li>
+                <li>记录报价、派单、配件、减免和责任方。</li>
+                <li>投诉、返修和赔付必须闭环。</li>
+              </ul>
+            </section>
+            <section class="service-panel">
+              <h3>试运营上线包</h3>
+              <ul>
+                <li>上线检查表、样板工单验证表。</li>
+                <li>真实图片拍摄清单、用户授权确认文案。</li>
+                <li>商城、库存、配送、财务跨板块同步清单。</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="route finance-route" id="financeRoute">
+          <div class="finance-hero">
+            <div>
+              <p class="eyebrow">07 财务与数据</p>
+              <h2>1000 单试运营控制台</h2>
+              <p>把订单、GMV、配送费、COD 应收实收、现金交回、缺货、准时、复购、投诉和毛利统一收口。第一阶段先用静态看板和表格规则跑通真实试运营。</p>
+            </div>
+            <div class="finance-status">
+              <span>当前阶段</span>
+              <strong>启动准备</strong>
+              <small>资料齐、员工会、规则清</small>
+            </div>
+          </div>
+
+          <div class="finance-kpi-grid" aria-label="财务数据核心指标">
+            <article class="finance-kpi">
+              <span>今日订单</span>
+              <strong>58</strong>
+              <small>完成 52 / 取消 4 / 拒收 2</small>
+            </article>
+            <article class="finance-kpi">
+              <span>GMV</span>
+              <strong>$1,842</strong>
+              <small>客单价 $35.42</small>
+            </article>
+            <article class="finance-kpi danger">
+              <span>COD 差异</span>
+              <strong>$24</strong>
+              <small>3 单需备注与负责人</small>
+            </article>
+            <article class="finance-kpi">
+              <span>缺货率</span>
+              <strong>5.8%</strong>
+              <small>目标低于 8%</small>
+            </article>
+            <article class="finance-kpi">
+              <span>准时率</span>
+              <strong>88%</strong>
+              <small>目标 85%+</small>
+            </article>
+            <article class="finance-kpi">
+              <span>毛利率</span>
+              <strong>22.4%</strong>
+              <small>按品类继续拆分</small>
+            </article>
+          </div>
+
+          <div class="finance-layout">
+            <section class="finance-panel">
+              <div class="panel-head">
+                <div>
+                  <p class="eyebrow">每日安全</p>
+                  <h3>COD 对账与日报关闭</h3>
+                </div>
+                <span class="status-chip danger">不可关闭</span>
+              </div>
+              <div class="finance-table">
+                <div class="finance-row finance-row-head">
+                  <span>检查项</span>
+                  <span>状态</span>
+                  <span>负责人</span>
+                </div>
+                <div class="finance-row">
+                  <span>COD 应收 / 实收 / 已交回</span>
+                  <span class="ok">已核对</span>
+                  <span>财务</span>
+                </div>
+                <div class="finance-row">
+                  <span>COD 差异备注</span>
+                  <span class="warn">缺 1 单</span>
+                  <span>财务</span>
+                </div>
+                <div class="finance-row">
+                  <span>缺货 SKU</span>
+                  <span class="ok">已填写</span>
+                  <span>门店/商品</span>
+                </div>
+                <div class="finance-row">
+                  <span>投诉处理人</span>
+                  <span class="ok">已指定</span>
+                  <span>客服/运营</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="finance-panel">
+              <div class="panel-head">
+                <div>
+                  <p class="eyebrow">异常升级</p>
+                  <h3>今日红线</h3>
+                </div>
+                <span class="status-chip">L3 当天升级</span>
+              </div>
+              <ul class="risk-list">
+                <li><b>现金未交回</b><span>Martinho，$24，财务跟进</span></li>
+                <li><b>COD 差异无备注</b><span>DL-20260703-WA-018，开单前补齐</span></li>
+                <li><b>凭证缺失</b><span>1 单大额订单缺签收照片</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="finance-layout bottom">
+            <section class="finance-panel">
+              <p class="eyebrow">阶段复盘</p>
+              <h3>100 / 300 / 1000 单决策路径</h3>
+              <div class="milestone-list">
+                <div><strong>100 单</strong><span>流程能不能跑、COD 能否日清、缺货能否定位</span></div>
+                <div><strong>300 单</strong><span>爆品、区域配送、复购、投诉是否有趋势</span></div>
+                <div><strong>1000 单</strong><span>现金是否可控、毛利是否成立、是否扩大试点</span></div>
+              </div>
+            </section>
+            <section class="finance-panel">
+              <p class="eyebrow">资料入口</p>
+              <h3>试运营执行资料包</h3>
+              <div class="resource-grid">
+                <span>执行总方案</span>
+                <span>每日群播报</span>
+                <span>每周复盘纪要</span>
+                <span>启动前验收</span>
+                <span>1000 单复盘</span>
+                <span>视觉方案索引</span>
+              </div>
+              <p class="resource-note">内部资料暂不放到公网测试链接，后续接账号权限后开放。</p>
+            </section>
+          </div>
+          <div class="live-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">财务实操</p>
+                <h3>COD 回款确认</h3>
+              </div>
+              <span class="status-chip">回款后订单完成</span>
+            </div>
+            <div class="live-order-list" id="financeLiveOrders"></div>
+          </div>
+        </section>
+
+        <section class="route city-integrated-route" id="cityRoute">
+          <section class="hero-panel">
+            <div>
+              <p class="eyebrow">同城服务</p>
+              <h1>找房、找工作、二手、店面信息</h1>
+              <p class="hero-copy">提交后人工审核，通过 WhatsApp 确认。叫车、租车、外卖先做咨询和需求收集。</p>
+            </div>
+            <div class="hero-actions">
+              <button class="primary-button" id="openPublish" type="button">发布信息</button>
+              <a class="secondary-button" href="https://wa.me/?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%20DiliLife%20%E5%90%8C%E5%9F%8E%E6%9C%8D%E5%8A%A1%E3%80%82" target="_blank" rel="noreferrer">WhatsApp 咨询</a>
+            </div>
+          </section>
+
+          <nav class="tabbar" aria-label="同城服务视图">
+            <button class="tab active" data-view="browse" type="button">浏览</button>
+            <button class="tab" data-view="mine" type="button">我的发布</button>
+            <button class="tab" data-view="support" type="button">客服审核</button>
+            <button class="tab" data-view="ops" type="button">复盘</button>
+          </nav>
+
+          <section class="view active" id="browseView">
+            <div class="search-row">
+              <input id="searchInput" type="search" placeholder="搜索房源、岗位、二手物品、店面" />
+              <select id="categoryFilter" aria-label="分类筛选">
+                <option value="all">全部</option>
+                <option value="housing">找房</option>
+                <option value="jobs">找工作</option>
+                <option value="secondhand">二手</option>
+                <option value="shopspace">找店面</option>
+                <option value="ride">叫车</option>
+                <option value="rental">租车</option>
+                <option value="food">外卖</option>
+              </select>
+            </div>
+
+            <div class="category-grid" id="categoryGrid"></div>
+
+            <div class="section-heading">
+              <h2>最新发布</h2>
+              <span id="browseCount">0 条</span>
+            </div>
+            <div class="listing-list" id="listingList"></div>
+          </section>
+
+          <section class="view" id="mineView">
+            <div class="section-heading">
+              <h2>我的发布</h2>
+              <span>查看审核状态、补充资料或申请下架</span>
+            </div>
+            <div class="listing-list" id="myPostList"></div>
+          </section>
+
+          <section class="view" id="supportView">
+            <div class="support-layout">
+              <aside class="queue-panel">
+                <div class="section-heading compact">
+                  <h2>待处理</h2>
+                  <span id="queueCount">0 条</span>
+                </div>
+                <div id="reviewQueue" class="queue-list"></div>
+              </aside>
+              <section class="review-panel" id="reviewPanel"></section>
+            </div>
+          </section>
+
+          <section class="view" id="opsView">
+            <div class="metric-grid" id="metricGrid"></div>
+            <div class="section-heading">
+              <h2>类目热度</h2>
+              <span>试运营参考</span>
+            </div>
+            <div class="bars" id="categoryBars"></div>
+          </section>
+
+          <footer class="safety-footer">
+            DiliLife 帝力生活提供信息发布、人工审核和联系入口。交易前请自行核实，不要轻易提前转账。
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="publishDialog" class="dialog">
+      <form id="publishForm" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">发布同城信息</p>
+            <h2>提交后等待人工审核</h2>
+          </div>
+          <button class="icon-button" value="cancel" type="submit" aria-label="关闭">×</button>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            发布类型
+            <select name="category" required>
+              <option value="housing">找房</option>
+              <option value="jobs">找工作</option>
+              <option value="secondhand">二手</option>
+              <option value="shopspace">找店面</option>
+              <option value="ride">叫车咨询</option>
+              <option value="rental">租车咨询</option>
+              <option value="food">外卖需求</option>
+            </select>
+          </label>
+          <label>
+            发布身份
+            <select name="identity" required>
+              <option value="个人">个人</option>
+              <option value="商家">商家</option>
+              <option value="中介">中介</option>
+              <option value="公司/招聘方">公司/招聘方</option>
+            </select>
+          </label>
+          <label class="wide">
+            标题
+            <input name="title" required maxlength="36" placeholder="例如：Comoro 两房出租 / 招聘门店收银员" />
+          </label>
+          <label class="wide">
+            描述
+            <textarea name="description" required rows="4" placeholder="请写清楚位置、价格、时间、要求和联系方式。"></textarea>
+          </label>
+          <label>
+            区域
+            <input name="area" required placeholder="Comoro、Becora、Timor Plaza 附近" />
+          </label>
+          <label>
+            价格/租金/薪资
+            <input name="price" required placeholder="150 USD/月、薪资面议" />
+          </label>
+          <label>
+            WhatsApp
+            <input name="whatsapp" required placeholder="+670 7xxx xxxx" />
+          </label>
+          <label>
+            图片状态
+            <select name="imageStatus">
+              <option value="有真实图片">有真实图片</option>
+              <option value="待补充图片">待补充图片</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="check-line">
+          <input name="agree" type="checkbox" required />
+          我确认信息真实，并同意平台人工审核、拒绝发布或下架违规信息。
+        </label>
+
+        <div class="dialog-actions">
+          <button class="secondary-button" value="cancel" type="submit">取消</button>
+          <button class="primary-button" id="submitPublish" value="default" type="submit">提交审核</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="listingDetailDialog" class="dialog listing-detail-dialog">
+      <div class="listing-detail-shell">
+        <button class="icon-button listing-detail-close" data-listing-detail-close type="button" aria-label="关闭">×</button>
+        <div class="listing-detail-media" id="listingDetailMedia"></div>
+        <div class="listing-detail-content">
+          <p class="eyebrow" id="listingDetailCategory">同城服务</p>
+          <h2 id="listingDetailTitle">信息标题</h2>
+          <strong class="listing-detail-price" id="listingDetailPrice">价格待确认</strong>
+          <p id="listingDetailDesc"></p>
+          <div class="detail-grid" id="listingDetailMeta"></div>
+          <div class="listing-detail-section">
+            <h3>交易/联系前确认</h3>
+            <ul id="listingDetailChecklist"></ul>
+          </div>
+          <div class="dialog-actions">
+            <button class="secondary-button" data-listing-detail-close type="button">继续浏览</button>
+            <a class="primary-button" id="listingDetailWhatsapp" href="https://wa.me/" target="_blank" rel="noreferrer">WhatsApp 咨询</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="reportDialog" class="dialog small-dialog">
+      <form id="reportForm" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">举报这条信息</p>
+            <h2>客服会复核处理</h2>
+          </div>
+          <button class="icon-button" value="cancel" type="submit" aria-label="关闭">×</button>
+        </div>
+        <input type="hidden" name="listingId" />
+        <label>
+          举报原因
+          <select name="reason" required>
+            <option value="虚假信息">虚假信息</option>
+            <option value="已过期">已过期</option>
+            <option value="疑似诈骗">疑似诈骗</option>
+            <option value="联系不上">联系不上</option>
+            <option value="价格/薪资不真实">价格/薪资不真实</option>
+            <option value="图片不真实">图片不真实</option>
+          </select>
+        </label>
+        <label>
+          补充说明
+          <textarea name="note" rows="3" placeholder="请简单说明问题，方便客服核实。"></textarea>
+        </label>
+        <div class="dialog-actions">
+          <button class="secondary-button" value="cancel" type="submit">取消</button>
+          <button class="primary-button" value="default" type="submit">提交举报</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="productDetailDialog" class="product-detail-dialog">
+      <div class="product-detail-shell">
+        <button class="product-detail-close" data-detail-close type="button" aria-label="关闭">×</button>
+        <div class="product-detail-media" id="productDetailMedia"></div>
+        <div class="product-detail-content">
+          <p class="eyebrow" id="productDetailCategory">商品详情</p>
+          <h2 id="productDetailName">商品名称</h2>
+          <strong class="product-detail-price" id="productDetailPrice">$0.00</strong>
+          <p id="productDetailDesc"></p>
+          <div class="product-detail-meta" id="productDetailMeta"></div>
+          <div class="product-detail-section">
+            <h3>商品介绍</h3>
+            <p id="productDetailIntro"></p>
+          </div>
+          <div class="product-detail-section">
+            <h3>下单确认</h3>
+            <ul id="productDetailChecklist"></ul>
+          </div>
+          <div class="product-detail-actions">
+            <button class="secondary" data-detail-close type="button">继续浏览</button>
+            <button class="primary" id="productDetailAdd" type="button">加入购物车</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="serviceDetailDialog" class="product-detail-dialog">
+      <div class="product-detail-shell">
+        <button class="product-detail-close" data-service-close type="button" aria-label="关闭">×</button>
+        <div class="product-detail-media service-detail-media" id="serviceDetailMedia"></div>
+        <div class="product-detail-content">
+          <p class="eyebrow" id="serviceDetailCategory">维修安装</p>
+          <h2 id="serviceDetailName">服务名称</h2>
+          <strong class="product-detail-price" id="serviceDetailPrice">$0 起</strong>
+          <p id="serviceDetailDesc"></p>
+          <div class="product-detail-meta" id="serviceDetailMeta"></div>
+          <div class="product-detail-section">
+            <h3>预约前确认</h3>
+            <ul id="serviceDetailChecklist"></ul>
+          </div>
+          <div class="product-detail-actions">
+            <button class="secondary" data-service-close type="button">继续浏览</button>
+            <a class="primary" href="https://wa.me/?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E7%BA%A6%20DiliLife%20%E7%BB%B4%E4%BF%AE%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1%E3%80%82" target="_blank" rel="noreferrer">WhatsApp 预约</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+    <script src="../06-同城服务扩展/软件原型/app.js?v=20260703"></script>
+  </body>
+</html>

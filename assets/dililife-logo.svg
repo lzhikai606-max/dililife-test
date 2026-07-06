@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">DiliLife logo</title>
+  <desc id="desc">DiliLife 帝力生活 brand mark</desc>
+  <rect width="512" height="512" rx="96" fill="#0f766e"/>
+  <path d="M124 258c0-88 58-146 138-146 82 0 138 56 138 144 0 87-57 144-138 144H124V258Z" fill="#ffffff"/>
+  <path d="M178 256c0-51 33-84 82-84 48 0 82 33 82 84s-34 84-82 84h-82v-84Z" fill="#0f766e"/>
+  <path d="M208 252l52-42 52 42v76h-34v-48h-36v48h-34v-76Z" fill="#ffffff"/>
+  <path d="M118 394c84 28 181 26 276-12" fill="none" stroke="#fbbf24" stroke-width="24" stroke-linecap="round"/>
+</svg>
