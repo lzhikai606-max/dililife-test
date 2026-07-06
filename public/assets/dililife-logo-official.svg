@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">DiliLife logo icon</title>
+  <desc id="desc">DiliLife 帝力生活 shield trust D logo icon</desc>
+  <defs>
+    <linearGradient id="shield" x1="226" y1="122" x2="798" y2="906" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18a799"/>
+      <stop offset=".58" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#0a4b45"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="108" y1="100" x2="900" y2="910" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7f5ef"/>
+      <stop offset="1" stop-color="#dcebe7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="246" fill="url(#bg)"/>
+  <path d="M512 128l310 112v220c0 208-126 340-310 436-184-96-310-228-310-436V240l310-112Z" fill="url(#shield)"/>
+  <path d="M344 286h160c132 0 226 94 226 226s-94 226-226 226H344V286Z" fill="#ffffff"/>
+  <path d="M454 410h48c64 0 112 46 112 102s-48 102-112 102h-48V410Z" fill="#0f766e"/>
+  <path d="M416 736c66 26 142 28 218 2" fill="none" stroke="#d97706" stroke-width="34" stroke-linecap="round"/>
+</svg>

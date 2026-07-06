@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480">
+  <rect width="600" height="480" fill="#0f766e"/>
+  <rect x="36" y="36" width="528" height="408" rx="18" fill="#f7f5ef"/>
+  <text x="68" y="128" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#16211f">DiliLife</text>
+  <text x="68" y="178" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0f766e">帝力生活</text>
+  <text x="68" y="246" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#16211f">帝力生活，一站到家</text>
+  <text x="68" y="306" font-family="Arial, sans-serif" font-size="24" fill="#53625e">本地购物 · 维修安装 · 同城信息</text>
+  <text x="68" y="344" font-family="Arial, sans-serif" font-size="24" fill="#53625e">叫车租车 · 外卖服务</text>
+  <rect x="68" y="376" width="202" height="44" rx="8" fill="#d97706"/>
+  <text x="92" y="406" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#fff">Dili Local Life</text>
+</svg>
